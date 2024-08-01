@@ -3,12 +3,12 @@
   --first-color: #6027d1;
   --white-color: #fff;
   --black-color: #000;
-  --gray-dark-color: #171717;
   --text-color: #222;
   --font: "Raleway", sans-serif;
   --border: 0.3rem solid var(--first-color);
   --border-radius: 0.5rem;
   --max-width: 1200px;
+  --footer-color: #f5750d;
 }
 
 /**** Reset **********************************************/
@@ -31,24 +31,9 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
 h2 {
   margin: 0;
   font-size: 1.5rem;
-}
-
-h3 {
-  margin: 0;
-  font-size: 1.25rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /**** Utilities **********************************************/
@@ -122,19 +107,27 @@ img {
   border-bottom: var(--border);
 }
 
-/* footer */
+/****** footer ******/
+
 .footer {
   padding: 0.4rem;
   text-align: center;
-  color: var(--black-color);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(8, 65, 107, 0.3);
   font-size: 1rem;
   font-weight: 600;
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
 }
 
+.footer small,
+.footer a {
+  color: var(--black-color);
+  font-weight: 400;
+  transition: all 1.3s ease;
+}
+
 .footer a:hover {
-  transition: color 1s;
-  color: var(--first-color);
+  color: var(--footer-color);
+  font-size: 1.05rem;
+  transition: all 1.3s ease;
 }
